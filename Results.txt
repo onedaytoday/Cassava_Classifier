@@ -1,0 +1,516 @@
+Testing Model:  VGG
+Indices retrieved and Dataset replaced
+Model:  VGG
+Loss:  0.4784605736505059  with  1793  samples
+Metrics for class 0:
+  Total Number of True Class 0: 90
+  Total Number of Predicted Class 0: 44
+  True Positives (TP): 34.0 (1.8962632417678833%)
+  True Negatives (TN): 1693.0 (94.42276000976562%)
+  False Positives (FP): 56.0 (3.1232571601867676%)
+  False Negatives (FN): 10.0 (0.5577244758605957%)
+  Precision: 0.3777777850627899
+  Accuracy: 0.9631901979446411
+  Recall: 0.7727272510528564
+  F1 Score: 0.5074626803398132
+  False Positive Rate (FPR): 0.03201829642057419
+
+Metrics for class 1:
+  Total Number of True Class 1: 210
+  Total Number of Predicted Class 1: 175
+  True Positives (TP): 143.0 (7.975460052490234%)
+  True Negatives (TN): 1551.0 (86.50306701660156%)
+  False Positives (FP): 67.0 (3.7367541790008545%)
+  False Negatives (FN): 32.0 (1.78471839427948%)
+  Precision: 0.6809523701667786
+  Accuracy: 0.9447852969169617
+  Recall: 0.8171428442001343
+  F1 Score: 0.7428570985794067
+  False Positive Rate (FPR): 0.041409146040678024
+
+Metrics for class 2:
+  Total Number of True Class 2: 205
+  Total Number of Predicted Class 2: 155
+  True Positives (TP): 132.0 (7.361963272094727%)
+  True Negatives (TN): 1565.0 (87.28388214111328%)
+  False Positives (FP): 73.0 (4.0713887214660645%)
+  False Negatives (FN): 23.0 (1.2827662229537964%)
+  Precision: 0.6439024209976196
+  Accuracy: 0.9464584589004517
+  Recall: 0.85161292552948
+  F1 Score: 0.7333333492279053
+  False Positive Rate (FPR): 0.04456654563546181
+
+Metrics for class 3:
+  Total Number of True Class 3: 1058
+  Total Number of Predicted Class 3: 1125
+  True Positives (TP): 1029.0 (57.38985061645508%)
+  True Negatives (TN): 639.0 (35.63859558105469%)
+  False Positives (FP): 29.0 (1.617401123046875%)
+  False Negatives (FN): 96.0 (5.35415506362915%)
+  Precision: 0.9725897908210754
+  Accuracy: 0.9302844405174255
+  Recall: 0.9146666526794434
+  F1 Score: 0.9427393674850464
+  False Positive Rate (FPR): 0.04341317340731621
+
+Metrics for class 4:
+  Total Number of True Class 4: 230
+  Total Number of Predicted Class 4: 294
+  True Positives (TP): 177.0 (9.871723175048828%)
+  True Negatives (TN): 1446.0 (80.64696502685547%)
+  False Positives (FP): 53.0 (2.955939769744873%)
+  False Negatives (FN): 117.0 (6.525376319885254%)
+  Precision: 0.769565224647522
+  Accuracy: 0.9051868319511414
+  Recall: 0.6020408272743225
+  F1 Score: 0.6755725145339966
+  False Positive Rate (FPR): 0.035356905311346054
+
+Global Metrics:
+  Total Count: 1793.0
+  Accuracy: 0.8449525833129883
+  Macro Precision: 0.6889575719833374
+  Macro Recall: 0.7916380763053894
+  Macro F1 Score: 0.7203930020332336
+
+Confusion Matrix:
+tensor([[  34,    4,    0,    9,   43],
+        [   3,  143,    3,   25,   36],
+        [   1,    8,  132,   37,   27],
+        [   3,    6,    9, 1029,   11],
+        [   3,   14,   11,   25,  177]], device='cuda:0', dtype=torch.int32)
+Data Class Distribution Matrix:
+tensor([  90,  210,  205, 1058,  230], device='cuda:0')
+(0.8449525833129883, 0.7203930020332336)
+Top 2 Global Accuracy:  94.08812713623047
+Testing Model:  ResNet
+Indices retrieved and Dataset replaced
+Model:  ResNet
+Loss:  0.46518335741702044  with  1793  samples
+Metrics for class 0:
+  Total Number of True Class 0: 90
+  Total Number of Predicted Class 0: 44
+  True Positives (TP): 30.0 (1.6731735467910767%)
+  True Negatives (TN): 1689.0 (94.19966125488281%)
+  False Positives (FP): 60.0 (3.3463470935821533%)
+  False Negatives (FN): 14.0 (0.7808142900466919%)
+  Precision: 0.3333333432674408
+  Accuracy: 0.9587283730506897
+  Recall: 0.6818181872367859
+  F1 Score: 0.447761207818985
+  False Positive Rate (FPR): 0.03430531546473503
+
+Metrics for class 1:
+  Total Number of True Class 1: 210
+  Total Number of Predicted Class 1: 203
+  True Positives (TP): 159.0 (8.867819786071777%)
+  True Negatives (TN): 1539.0 (85.83380126953125%)
+  False Positives (FP): 51.0 (2.8443949222564697%)
+  False Negatives (FN): 44.0 (2.4539875984191895%)
+  Precision: 0.7571428418159485
+  Accuracy: 0.947016179561615
+  Recall: 0.7832512259483337
+  F1 Score: 0.7699757814407349
+  False Positive Rate (FPR): 0.03207547217607498
+
+Metrics for class 2:
+  Total Number of True Class 2: 205
+  Total Number of Predicted Class 2: 163
+  True Positives (TP): 134.0 (7.473508358001709%)
+  True Negatives (TN): 1559.0 (86.94924926757812%)
+  False Positives (FP): 71.0 (3.959843873977661%)
+  False Negatives (FN): 29.0 (1.617401123046875%)
+  Precision: 0.6536585092544556
+  Accuracy: 0.9442275762557983
+  Recall: 0.8220859169960022
+  F1 Score: 0.72826087474823
+  False Positive Rate (FPR): 0.043558280915021896
+
+Metrics for class 3:
+  Total Number of True Class 3: 1058
+  Total Number of Predicted Class 3: 1066
+  True Positives (TP): 997.0 (55.605133056640625%)
+  True Negatives (TN): 666.0 (37.14445114135742%)
+  False Positives (FP): 61.0 (3.4021193981170654%)
+  False Negatives (FN): 69.0 (3.848299026489258%)
+  Precision: 0.942344069480896
+  Accuracy: 0.9274958372116089
+  Recall: 0.9352720379829407
+  F1 Score: 0.938794732093811
+  False Positive Rate (FPR): 0.08390646427869797
+
+Metrics for class 4:
+  Total Number of True Class 4: 230
+  Total Number of Predicted Class 4: 317
+  True Positives (TP): 178.0 (9.927495956420898%)
+  True Negatives (TN): 1424.0 (79.41996765136719%)
+  False Positives (FP): 52.0 (2.900167465209961%)
+  False Negatives (FN): 139.0 (7.7523698806762695%)
+  Precision: 0.7739130258560181
+  Accuracy: 0.8934746384620667
+  Recall: 0.5615141987800598
+  F1 Score: 0.650822639465332
+  False Positive Rate (FPR): 0.035230353474617004
+
+Global Metrics:
+  Total Count: 1793.0
+  Accuracy: 0.8354712724685669
+  Macro Precision: 0.6920783519744873
+  Macro Recall: 0.7567883729934692
+  Macro F1 Score: 0.7071230411529541
+
+Confusion Matrix:
+tensor([[ 30,  10,   3,   3,  44],
+        [  4, 159,   3,   8,  36],
+        [  1,   6, 134,  35,  29],
+        [  4,  11,  16, 997,  30],
+        [  5,  17,   7,  23, 178]], device='cuda:0', dtype=torch.int32)
+Data Class Distribution Matrix:
+tensor([  90,  210,  205, 1058,  230], device='cuda:0')
+(0.8354712724685669, 0.7071230411529541)
+Top 2 Global Accuracy:  94.70161437988281
+Testing Model:  Swin
+Indices retrieved and Dataset replaced
+Model:  Swin
+Loss:  0.5154948745531768  with  1793  samples
+Metrics for class 0:
+  Total Number of True Class 0: 90
+  Total Number of Predicted Class 0: 79
+  True Positives (TP): 53.0 (2.955939769744873%)
+  True Negatives (TN): 1677.0 (93.5303955078125%)
+  False Positives (FP): 37.0 (2.0635805130004883%)
+  False Negatives (FN): 26.0 (1.4500837326049805%)
+  Precision: 0.5888888835906982
+  Accuracy: 0.9648633599281311
+  Recall: 0.6708860993385315
+  F1 Score: 0.6272189617156982
+  False Positive Rate (FPR): 0.021586930379271507
+
+Metrics for class 1:
+  Total Number of True Class 1: 210
+  Total Number of Predicted Class 1: 199
+  True Positives (TP): 163.0 (9.090909004211426%)
+  True Negatives (TN): 1547.0 (86.27997589111328%)
+  False Positives (FP): 47.0 (2.621304988861084%)
+  False Negatives (FN): 36.0 (2.007808208465576%)
+  Precision: 0.776190459728241
+  Accuracy: 0.9537088871002197
+  Recall: 0.8190954923629761
+  F1 Score: 0.7970660924911499
+  False Positive Rate (FPR): 0.029485570266842842
+
+Metrics for class 2:
+  Total Number of True Class 2: 205
+  Total Number of Predicted Class 2: 145
+  True Positives (TP): 127.0 (7.08310079574585%)
+  True Negatives (TN): 1570.0 (87.562744140625%)
+  False Positives (FP): 78.0 (4.350251197814941%)
+  False Negatives (FN): 18.0 (1.003904104232788%)
+  Precision: 0.6195122003555298
+  Accuracy: 0.9464584589004517
+  Recall: 0.8758620619773865
+  F1 Score: 0.7257143259048462
+  False Positive Rate (FPR): 0.0473300963640213
+
+Metrics for class 3:
+  Total Number of True Class 3: 1058
+  Total Number of Predicted Class 3: 1150
+  True Positives (TP): 1046.0 (58.337982177734375%)
+  True Negatives (TN): 631.0 (35.192413330078125%)
+  False Positives (FP): 12.0 (0.6692693829536438%)
+  False Negatives (FN): 104.0 (5.800334930419922%)
+  Precision: 0.9886578321456909
+  Accuracy: 0.9353039860725403
+  Recall: 0.9095652103424072
+  F1 Score: 0.9474637508392334
+  False Positive Rate (FPR): 0.01866251975297928
+
+Metrics for class 4:
+  Total Number of True Class 4: 230
+  Total Number of Predicted Class 4: 220
+  True Positives (TP): 154.0 (8.588956832885742%)
+  True Negatives (TN): 1497.0 (83.4913558959961%)
+  False Positives (FP): 76.0 (4.238706111907959%)
+  False Negatives (FN): 66.0 (3.6809816360473633%)
+  Precision: 0.6695652008056641
+  Accuracy: 0.9208031296730042
+  Recall: 0.699999988079071
+  F1 Score: 0.6844444274902344
+  False Positive Rate (FPR): 0.048315320163965225
+
+Global Metrics:
+  Total Count: 1793.0
+  Accuracy: 0.8605688810348511
+  Macro Precision: 0.7285629510879517
+  Macro Recall: 0.7950817942619324
+  Macro F1 Score: 0.7563815116882324
+
+Confusion Matrix:
+tensor([[  53,    6,    1,    6,   24],
+        [  10,  163,    4,   18,   15],
+        [   4,    3,  127,   49,   22],
+        [   1,    1,    5, 1046,    5],
+        [  11,   26,    8,   31,  154]], device='cuda:0', dtype=torch.int32)
+Data Class Distribution Matrix:
+tensor([  90,  210,  205, 1058,  230], device='cuda:0')
+(0.8605688810348511, 0.7563815116882324)
+Top 2 Global Accuracy:  95.25934600830078
+Testing Model:  EfficientNetV2L
+Indices retrieved and Dataset replaced
+Model:  EfficientNetV2L
+Loss:  0.6633770920671833  with  1793  samples
+Metrics for class 0:
+  Total Number of True Class 0: 90
+  Total Number of Predicted Class 0: 87
+  True Positives (TP): 58.0 (3.23480224609375%)
+  True Negatives (TN): 1674.0 (93.36307525634766%)
+  False Positives (FP): 32.0 (1.78471839427948%)
+  False Negatives (FN): 29.0 (1.617401123046875%)
+  Precision: 0.644444465637207
+  Accuracy: 0.9659788012504578
+  Recall: 0.6666666865348816
+  F1 Score: 0.6553671956062317
+  False Positive Rate (FPR): 0.018757326528429985
+
+Metrics for class 1:
+  Total Number of True Class 1: 210
+  Total Number of Predicted Class 1: 206
+  True Positives (TP): 168.0 (9.369771003723145%)
+  True Negatives (TN): 1545.0 (86.1684341430664%)
+  False Positives (FP): 42.0 (2.342442750930786%)
+  False Negatives (FN): 38.0 (2.1193530559539795%)
+  Precision: 0.800000011920929
+  Accuracy: 0.9553820490837097
+  Recall: 0.8155339956283569
+  F1 Score: 0.807692289352417
+  False Positive Rate (FPR): 0.026465028524398804
+
+Metrics for class 2:
+  Total Number of True Class 2: 205
+  Total Number of Predicted Class 2: 219
+  True Positives (TP): 165.0 (9.202454566955566%)
+  True Negatives (TN): 1534.0 (85.554931640625%)
+  False Positives (FP): 40.0 (2.230897903442383%)
+  False Negatives (FN): 54.0 (3.0117123126983643%)
+  Precision: 0.8048780560493469
+  Accuracy: 0.9475739002227783
+  Recall: 0.7534246444702148
+  F1 Score: 0.7783019542694092
+  False Positive Rate (FPR): 0.02541295997798443
+
+Metrics for class 3:
+  Total Number of True Class 3: 1058
+  Total Number of Predicted Class 3: 1048
+  True Positives (TP): 1005.0 (56.051307678222656%)
+  True Negatives (TN): 692.0 (38.59453582763672%)
+  False Positives (FP): 53.0 (2.955939769744873%)
+  False Negatives (FN): 43.0 (2.3982152938842773%)
+  Precision: 0.9499054551124573
+  Accuracy: 0.9464584589004517
+  Recall: 0.9589694738388062
+  F1 Score: 0.9544159173965454
+  False Positive Rate (FPR): 0.07114093750715256
+
+Metrics for class 4:
+  Total Number of True Class 4: 230
+  Total Number of Predicted Class 4: 233
+  True Positives (TP): 162.0 (9.035136222839355%)
+  True Negatives (TN): 1492.0 (83.21249389648438%)
+  False Positives (FP): 68.0 (3.7925264835357666%)
+  False Negatives (FN): 71.0 (3.959843873977661%)
+  Precision: 0.7043478488922119
+  Accuracy: 0.9224762916564941
+  Recall: 0.6952789425849915
+  F1 Score: 0.6997840404510498
+  False Positive Rate (FPR): 0.043589744716882706
+
+Global Metrics:
+  Total Count: 1793.0
+  Accuracy: 0.8689347505569458
+  Macro Precision: 0.7807151675224304
+  Macro Recall: 0.7779747843742371
+  Macro F1 Score: 0.7791122794151306
+
+Confusion Matrix:
+tensor([[  58,    6,    3,    1,   22],
+        [   9,  168,    5,    6,   22],
+        [   2,    3,  165,   19,   16],
+        [   5,    8,   29, 1005,   11],
+        [  13,   21,   17,   17,  162]], device='cuda:0', dtype=torch.int32)
+Data Class Distribution Matrix:
+tensor([  90,  210,  205, 1058,  230], device='cuda:0')
+(0.8689347505569458, 0.7791122794151306)
+Top 2 Global Accuracy:  96.37479400634766
+Testing Model:  CombinedVGGEfNet
+Indices retrieved and Dataset replaced
+Model:  CombinedVGGEfNet
+Loss:  0.452174931544368  with  1793  samples
+Metrics for class 0:
+  Total Number of True Class 0: 90
+  Total Number of Predicted Class 0: 77
+  True Positives (TP): 54.0 (3.0117123126983643%)
+  True Negatives (TN): 1680.0 (93.69771575927734%)
+  False Positives (FP): 36.0 (2.007808208465576%)
+  False Negatives (FN): 23.0 (1.2827662229537964%)
+  Precision: 0.6000000238418579
+  Accuracy: 0.9670942425727844
+  Recall: 0.701298713684082
+  F1 Score: 0.6467066407203674
+  False Positive Rate (FPR): 0.02097902074456215
+
+Metrics for class 1:
+  Total Number of True Class 1: 210
+  Total Number of Predicted Class 1: 188
+  True Positives (TP): 159.0 (8.867819786071777%)
+  True Negatives (TN): 1554.0 (86.6703872680664%)
+  False Positives (FP): 51.0 (2.8443949222564697%)
+  False Negatives (FN): 29.0 (1.617401123046875%)
+  Precision: 0.7571428418159485
+  Accuracy: 0.9553820490837097
+  Recall: 0.8457446694374084
+  F1 Score: 0.7989949584007263
+  False Positive Rate (FPR): 0.03177570179104805
+
+Metrics for class 2:
+  Total Number of True Class 2: 205
+  Total Number of Predicted Class 2: 209
+  True Positives (TP): 165.0 (9.202454566955566%)
+  True Negatives (TN): 1544.0 (86.11266326904297%)
+  False Positives (FP): 40.0 (2.230897903442383%)
+  False Negatives (FN): 44.0 (2.4539875984191895%)
+  Precision: 0.8048780560493469
+  Accuracy: 0.9531511664390564
+  Recall: 0.7894737124443054
+  F1 Score: 0.7971014380455017
+  False Positive Rate (FPR): 0.02525252476334572
+
+Metrics for class 3:
+  Total Number of True Class 3: 1058
+  Total Number of Predicted Class 3: 1046
+  True Positives (TP): 1003.0 (55.939762115478516%)
+  True Negatives (TN): 692.0 (38.59453582763672%)
+  False Positives (FP): 55.0 (3.0674846172332764%)
+  False Negatives (FN): 43.0 (2.3982152938842773%)
+  Precision: 0.9480150938034058
+  Accuracy: 0.945343017578125
+  Recall: 0.9588910341262817
+  F1 Score: 0.9534220695495605
+  False Positive Rate (FPR): 0.07362784445285797
+
+Metrics for class 4:
+  Total Number of True Class 4: 230
+  Total Number of Predicted Class 4: 273
+  True Positives (TP): 174.0 (9.704405784606934%)
+  True Negatives (TN): 1464.0 (81.65086364746094%)
+  False Positives (FP): 56.0 (3.1232571601867676%)
+  False Negatives (FN): 99.0 (5.521472454071045%)
+  Precision: 0.7565217614173889
+  Accuracy: 0.9135527014732361
+  Recall: 0.6373626589775085
+  F1 Score: 0.6918489336967468
+  False Positive Rate (FPR): 0.03684210404753685
+
+Global Metrics:
+  Total Count: 1793.0
+  Accuracy: 0.8672615885734558
+  Macro Precision: 0.7733115553855896
+  Macro Recall: 0.7865541577339172
+  Macro F1 Score: 0.7776148319244385
+
+Confusion Matrix:
+tensor([[  54,    2,    1,    3,   30],
+        [   6,  159,    3,    7,   35],
+        [   1,    3,  165,   17,   19],
+        [   4,    9,   27, 1003,   15],
+        [  12,   15,   13,   16,  174]], device='cuda:0', dtype=torch.int32)
+Data Class Distribution Matrix:
+tensor([  90,  210,  205, 1058,  230], device='cuda:0')
+(0.8672615885734558, 0.7776148319244385)
+Top 2 Global Accuracy:  94.59007263183594
+Testing Model:  SwinEfficientNetComb
+Indices retrieved and Dataset replaced
+Model:  SwinEfficientNetComb
+Loss:  0.42484705276035156  with  1793  samples
+Metrics for class 0:
+  Total Number of True Class 0: 90
+  Total Number of Predicted Class 0: 86
+  True Positives (TP): 61.0 (3.4021193981170654%)
+  True Negatives (TN): 1678.0 (93.58617401123047%)
+  False Positives (FP): 29.0 (1.617401123046875%)
+  False Negatives (FN): 25.0 (1.3943111896514893%)
+  Precision: 0.6777777671813965
+  Accuracy: 0.9698829054832458
+  Recall: 0.7093023061752319
+  F1 Score: 0.6931818127632141
+  False Positive Rate (FPR): 0.01698886975646019
+
+Metrics for class 1:
+  Total Number of True Class 1: 210
+  Total Number of Predicted Class 1: 197
+  True Positives (TP): 167.0 (9.31399917602539%)
+  True Negatives (TN): 1553.0 (86.61461639404297%)
+  False Positives (FP): 43.0 (2.3982152938842773%)
+  False Negatives (FN): 30.0 (1.6731735467910767%)
+  Precision: 0.7952380776405334
+  Accuracy: 0.959286093711853
+  Recall: 0.8477157354354858
+  F1 Score: 0.8206387758255005
+  False Positive Rate (FPR): 0.026942355558276176
+
+Metrics for class 2:
+  Total Number of True Class 2: 205
+  Total Number of Predicted Class 2: 185
+  True Positives (TP): 154.0 (8.588956832885742%)
+  True Negatives (TN): 1557.0 (86.83769989013672%)
+  False Positives (FP): 51.0 (2.8443949222564697%)
+  False Negatives (FN): 31.0 (1.7289459705352783%)
+  Precision: 0.7512195110321045
+  Accuracy: 0.9542666077613831
+  Recall: 0.8324324488639832
+  F1 Score: 0.7897436022758484
+  False Positive Rate (FPR): 0.03171641752123833
+
+Metrics for class 3:
+  Total Number of True Class 3: 1058
+  Total Number of Predicted Class 3: 1083
+  True Positives (TP): 1024.0 (57.11098861694336%)
+  True Negatives (TN): 676.0 (37.70217514038086%)
+  False Positives (FP): 34.0 (1.8962632417678833%)
+  False Negatives (FN): 59.0 (3.290574550628662%)
+  Precision: 0.967863917350769
+  Accuracy: 0.9481316208839417
+  Recall: 0.9455217123031616
+  F1 Score: 0.956562340259552
+  False Positive Rate (FPR): 0.047887325286865234
+
+Metrics for class 4:
+  Total Number of True Class 4: 230
+  Total Number of Predicted Class 4: 242
+  True Positives (TP): 166.0 (9.25822639465332%)
+  True Negatives (TN): 1487.0 (82.93363189697266%)
+  False Positives (FP): 64.0 (3.56943678855896%)
+  False Negatives (FN): 76.0 (4.238706111907959%)
+  Precision: 0.7217391133308411
+  Accuracy: 0.9219185709953308
+  Recall: 0.6859503984451294
+  F1 Score: 0.7033897638320923
+  False Positive Rate (FPR): 0.041263699531555176
+
+Global Metrics:
+  Total Count: 1793.0
+  Accuracy: 0.8767428994178772
+  Macro Precision: 0.7827677130699158
+  Macro Recall: 0.8041845560073853
+  Macro F1 Score: 0.7927032709121704
+
+Confusion Matrix:
+tensor([[  61,    2,    1,    4,   22],
+        [   7,  167,    4,    8,   24],
+        [   3,    3,  154,   24,   21],
+        [   3,    7,   15, 1024,    9],
+        [  12,   18,   11,   23,  166]], device='cuda:0', dtype=torch.int32)
+Data Class Distribution Matrix:
+tensor([  90,  210,  205, 1058,  230], device='cuda:0')
+(0.8767428994178772, 0.7927032709121704)
+Top 2 Global Accuracy:  95.87284088134766

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Classification Portal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #eef2f7;
+            color: #333;
+        }
+        header {
+            color: #fff;
+            background-color: #216837; /* Darker green for the header */
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        main {
+            padding-top: 60px;
+            width: 90%;
+            max-width: 600px;
+            margin-top: -30px; /* Adjustment for vertical centering */
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s;
+        }
+        form:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        input[type=file], input[type=submit] {
+            margin-top: 10px;
+        }
+        input[type=submit] {
+            background-color: #1e7e34; /* Darker green for the button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        input[type=submit]:hover {
+            background-color: #18632a; /* Even darker green on hover */
+        }
+        #result, #info {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #result.show, #info.show {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>Disease Classification Portal</header>
+    <main>
+        <form id="uploadForm">
+            <h2>Upload an image for Disease Classification</h2>
+            <input type="file" id="fileInput" name="file" required>
+            <input type="button" value="Upload Image" onclick="uploadImage()">
+        </form>
+        <div id="info" class="show">
+            <h3>Possible Cassava Diseases</h3>
+            <ul>
+                <li>Cassava Bacterial Blight (CBB)</li>
+                <li>Cassava Brown Streak Disease (CBSD)</li>
+                <li>Cassava Green Mottle (CGM)</li>
+                <li>Cassava Mosaic Disease (CMD)</li>
+                <li>Healthy</li>
+            </ul>
+        </div>
+        <div id="result"></div>
+    </main>
+
+    <script>
+        function uploadImage() {
+            var formData = new FormData();
+            var fileInput = document.getElementById('fileInput');
+            var resultDiv = document.getElementById('result');
+            formData.append('file', fileInput.files[0]);
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                if(data.result) {
+                    resultDiv.innerHTML = `<h3>Classification Result:</h3><p>${data.result}</p>`;
+                    resultDiv.classList.add('show');
+                } else {
+                    resultDiv.innerHTML = `<p>Error: ${data.error}</p>`;
+                    resultDiv.classList.add('show');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                resultDiv.innerHTML = `<p>An error occurred while processing the image.</p>`;
+                resultDiv.classList.add('show');
+            });
+        }
+    </script>
+</body>
+</html>
