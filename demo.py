@@ -10,8 +10,8 @@ from ModelRunner import LearningModel
 
 
 class PlantDiseaseClassification:
-    model_name = 'EfficientNetV2L'
-    model_location = 'EfficientNetV2L.pth'
+    model_name = 'ResNet'
+    model_location = 'ResNet.pth'
     number_of_classes = 5
     transform = transforms.Compose([
         transforms.Resize((448, 448)),
